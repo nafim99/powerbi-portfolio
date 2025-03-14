@@ -1,0 +1,10 @@
+1) Create 2 Lists:
+
+StartDate = #"Date.StartOfYear"(List.Min(TableName[DateColumn]))
+EndDate = #"Date.EndOfYear"(List.Max(TableName[DateColumn]))
+
+2) Create a table with the first two lists:
+
+Table  = {Number.From(#"StartDate")..Number.From(#"EndDate")}
+
+
